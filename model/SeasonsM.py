@@ -1,9 +1,15 @@
 class Seasons:
 
-    def __init__(self, __seasons_id):
-        self.__seasons_id = __seasons_id
+    def __init__(self, __season_id, __annee):
+        self.__season_id = __season_id
+        self.__annee = __annee
 
-    def setSeasonId(self, seasons_id) -> None:
-        self.__seasons_id = seasons_id
+    def setSeasonId(self, season_id) -> None:
+        self.__season_id = season_id
     def getSeasonId(self) -> int:
-        return self.__seasons_id
+        return self.__season_id
+    
+    def setAnnee(self, annee) -> None:
+        self.__annee = annee
+    def getAnnee(self) -> int:
+        return self.__annee

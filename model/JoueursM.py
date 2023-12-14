@@ -2,8 +2,8 @@ class Joueurs:
 
     def __init__(self, __joueur_id, __nom_joueur, __premon_joueur, __position, __nombre_de_but, __nombre_de_passes_d, __distance_parcurue):
         self.__joueur_id = __joueur_id
-        self.__nom = __nom_joueur
-        self.__premon = __premon_joueur
+        self.__nom_joueur = __nom_joueur
+        self.__premon_joueur = __premon_joueur
         self.__position = __position
         self.__nombre_de_but = __nombre_de_but,
         self.__nombre_de_passes_d = __nombre_de_passes_d

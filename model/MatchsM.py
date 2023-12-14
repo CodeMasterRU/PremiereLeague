@@ -1,14 +1,14 @@
 class Matchs:
 
-    def __init__(self, __math_id, __date, __stade, __resultat):
-        self.__math_id = __math_id,
+    def __init__(self, __match_id, __date, __stade, __resultat):
+        self.__math_id = __match_id,
         self.__date = __date,
         self.__stade = __stade,
         self.__resultat = __resultat
 
-    def setMathId(self, math_id) -> None:
-        self.__math_id = math_id
-    def getMathId(self) -> int:
+    def setMatchId(self, match_id) -> None:
+        self.__math_id = match_id
+    def getMatchId(self) -> int:
         return self.__math_id
     
     def setDate(self, date) -> None:

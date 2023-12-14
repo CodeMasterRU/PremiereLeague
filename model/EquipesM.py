@@ -1,7 +1,6 @@
 class Equipes:
 
     def __init__(self, __equipe_id, __nom_de_equipe, __manager, __joueurs):
-
         self.__equipe_id = __equipe_id,
         self.__nom_de_equipe = __nom_de_equipe,
         self.__manager = __manager,
@@ -25,10 +24,10 @@ class Equipes:
     def getManager(self) -> str:
         return self.__manager
     
-    def setManager(self, joueurs) -> None:
+    def setJoueur(self, joueurs) -> None:
         self.__joueurs = joueurs
 
-    def getManager(self) -> str:
+    def getJoueur(self) -> str:
         return self.__joueurs
 
 
