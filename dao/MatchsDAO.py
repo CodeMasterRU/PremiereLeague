@@ -2,7 +2,7 @@ from dao import ModelDAO
 from model.MatchsM import Matchs
 
 
-class EquipesDAO(ModelDAO.modeleDAO):
+class MatchsDAO(ModelDAO.modeleDAO):
     def __init__(self):
         params = ModelDAO.modeleDAO.connect_objet
         self.cur = params.cursor()

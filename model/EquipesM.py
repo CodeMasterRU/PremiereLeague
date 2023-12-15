@@ -24,10 +24,10 @@ class Equipes:
     def getManager(self) -> str:
         return self.__manager
     
-    def setJoueur(self, joueurs) -> None:
+    def setJoueurs(self, joueurs) -> None:
         self.__joueurs = joueurs
 
-    def getJoueur(self) -> str:
+    def getJoueurs(self) -> str:
         return self.__joueurs
 
 
