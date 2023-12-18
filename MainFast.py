@@ -18,7 +18,7 @@ app = Flask(__name__)
 
 
 CORS(app, resources={r"/api/premierleague/postgresql/*": {"origins": "*"}})
-LOG_FILE_PATH = './PremiereLeague/utils/logs.json'
+LOG_FILE_PATH = './utils/logs.json'
 
 
 @app.route('/api/premierleague/test', methods=['GET', 'POST']) #### pas sur de route 
