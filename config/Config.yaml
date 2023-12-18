@@ -1,8 +1,6 @@
-postgreSQLAccess :
-  database_name : 
-  host : 
-  port : 
-  pwd :
-    pwd1 : 
-  user :
-    usr1 : 
+postgreSQLAccess : 'localhost'
+database_name : 'PremierLeague'
+host : 'db.obbiinlmtrdisbfhowlx.supabase.co'
+port : 5432
+pwd : 'Molodoy'
+user : 'postgres'
