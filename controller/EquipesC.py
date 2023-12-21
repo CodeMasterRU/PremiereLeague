@@ -4,21 +4,21 @@ from model import EquipesM
 class Equipes:
 
     @staticmethod
-    def visualiserEq():
+    def visualiserEquipes():
 
         try:
 
             eDAO = EquipesDAO()
 
             eqs: list[EquipesM.Equipes] = eDAO.trouverTout()
-
+            print(eqs)
             if eqs==None :
                 return "ERROR"
 
             return eqs
 
         except Exception as e:
-            print(f'Erreur_EquipessC.visualiserEq() ::: {e}')
+            print(f'Erreur_EquipesC.visualiserEq() ::: {e}')
 
         return None
 

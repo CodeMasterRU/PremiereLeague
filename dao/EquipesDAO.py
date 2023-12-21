@@ -56,28 +56,25 @@ class EquipesDAO(ModelDAO.modeleDAO):
             res = self.cur.fetchall()
 
             liste_equipes = []
-
+            print(res)
             if len(res) > 0:
                 for r in res:
                     e = Equipes()
+                    
                     e.setEquipeId(r[0])
                     e.setNomDeEquipe(r[1])
                     e.setManager(r[2])
-                    e.setJoueur(r[3])
-
+                    e.setJoueurs(r[3])
                     liste_equipes.append(e)
-                
                 return liste_equipes
-            
             else:
-
                 return None
         
         except Exception as e:
             print(f"Erreur_EquipesDAO.trouverTout() ::: {e}")
+            return None
         finally:
             self.cur.close()
-            return None
         
     def trouverToutParUn(self, cleTrouv) -> list[Equipes]:
         try: 

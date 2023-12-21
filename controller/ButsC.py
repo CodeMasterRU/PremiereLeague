@@ -5,10 +5,6 @@ class Buts:
 
     @staticmethod
     def visualiserButs():
-        '''
-        Visualise tous les buts.
-        @retrun: Liste de buts ou message d'erreur
-        '''
 
         try:
 

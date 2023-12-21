@@ -1,10 +1,23 @@
 [
   {
-    "timestamp": "2023-12-21 14:30:35",
+    "timestamp": "2023-12-21 15:03:19",
+    "route": "/",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.0,
+    "response": {
+      "Notice": "The api is protected, you could not do anything.",
+      "A message for you ": "Hello dear dev./user WELCOME TO the Privacy Policy premier_league",
+      "Pay attention": "We collect certain information, including your IP address and MAC address, for troubleshooting purposes. This information is collected automatically and anonymously and is not used to personally identify you unless there is a technical issue.",
+      "Privacy Policy": "\nConfidentiality and Security: We prioritize the protection of your information and have implemented appropriate security measures to prevent unauthorized access, disclosure, or alteration. Only authorized personnel have access to this information, and they are bound by confidentiality obligations.\nAccess Restrictions and Exploration: Unauthorized access to our application, including attempting to explore its functioning by accessing the root of the API, is strictly prohibited. Any violation of this privacy policy or our terms of use may result in disciplinary action, including account termination and, if necessary, legal action.\nInformation Retention: We retain your information for as long as necessary to fulfill the purposes stated in this privacy policy, unless a longer retention period is required or permitted by law.\nChanges to the Privacy Policy: We reserve the right to modify this privacy policy at any time. Any changes will be effective upon publication on our website or within the application. It is your responsibility to regularly review this privacy policy for any updates.\nConsent: By using our application, you consent to the collection, use, and disclosure of your information in accordance with this privacy policy.\nLast Updated: 2023/11/30\n"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:03:35",
     "route": "/api/premierleague/postgresql/getButs",
     "method": "GET",
     "ip_address": "127.0.0.1",
-    "execution_time": 0.022227,
+    "execution_time": 0.055888,
     "response": {
       "response": [
         {
@@ -23,10 +36,582 @@
     }
   },
   {
-    "timestamp": "2023-12-21 14:30:48",
-    "route": "/api/premierleague/postgresql/getUnBut",
+    "timestamp": "2023-12-21 15:03:49",
+    "route": "/api/premierleague/postgresql/getEquipes",
     "method": "GET",
     "ip_address": "127.0.0.1",
-    "execution_time": 0.026569,
+    "execution_time": 0.027591,
     "response": {
-      "response": 
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:04:53",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.027452,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:04:54",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.027614,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:05:13",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.027384,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:05:20",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.070123,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:06:42",
+    "route": "/",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.000998,
+    "response": {
+      "Notice": "The api is protected, you could not do anything.",
+      "A message for you ": "Hello dear dev./user WELCOME TO the Privacy Policy premier_league",
+      "Pay attention": "We collect certain information, including your IP address and MAC address, for troubleshooting purposes. This information is collected automatically and anonymously and is not used to personally identify you unless there is a technical issue.",
+      "Privacy Policy": "\nConfidentiality and Security: We prioritize the protection of your information and have implemented appropriate security measures to prevent unauthorized access, disclosure, or alteration. Only authorized personnel have access to this information, and they are bound by confidentiality obligations.\nAccess Restrictions and Exploration: Unauthorized access to our application, including attempting to explore its functioning by accessing the root of the API, is strictly prohibited. Any violation of this privacy policy or our terms of use may result in disciplinary action, including account termination and, if necessary, legal action.\nInformation Retention: We retain your information for as long as necessary to fulfill the purposes stated in this privacy policy, unless a longer retention period is required or permitted by law.\nChanges to the Privacy Policy: We reserve the right to modify this privacy policy at any time. Any changes will be effective upon publication on our website or within the application. It is your responsibility to regularly review this privacy policy for any updates.\nConsent: By using our application, you consent to the collection, use, and disclosure of your information in accordance with this privacy policy.\nLast Updated: 2023/11/30\n"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:06:51",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.062238,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:07:59",
+    "route": "/",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.0,
+    "response": {
+      "Notice": "The api is protected, you could not do anything.",
+      "A message for you ": "Hello dear dev./user WELCOME TO the Privacy Policy premier_league",
+      "Pay attention": "We collect certain information, including your IP address and MAC address, for troubleshooting purposes. This information is collected automatically and anonymously and is not used to personally identify you unless there is a technical issue.",
+      "Privacy Policy": "\nConfidentiality and Security: We prioritize the protection of your information and have implemented appropriate security measures to prevent unauthorized access, disclosure, or alteration. Only authorized personnel have access to this information, and they are bound by confidentiality obligations.\nAccess Restrictions and Exploration: Unauthorized access to our application, including attempting to explore its functioning by accessing the root of the API, is strictly prohibited. Any violation of this privacy policy or our terms of use may result in disciplinary action, including account termination and, if necessary, legal action.\nInformation Retention: We retain your information for as long as necessary to fulfill the purposes stated in this privacy policy, unless a longer retention period is required or permitted by law.\nChanges to the Privacy Policy: We reserve the right to modify this privacy policy at any time. Any changes will be effective upon publication on our website or within the application. It is your responsibility to regularly review this privacy policy for any updates.\nConsent: By using our application, you consent to the collection, use, and disclosure of your information in accordance with this privacy policy.\nLast Updated: 2023/11/30\n"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:08:11",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.052098,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:08:50",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.048173,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:08:54",
+    "route": "/",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.0,
+    "response": {
+      "Notice": "The api is protected, you could not do anything.",
+      "A message for you ": "Hello dear dev./user WELCOME TO the Privacy Policy premier_league",
+      "Pay attention": "We collect certain information, including your IP address and MAC address, for troubleshooting purposes. This information is collected automatically and anonymously and is not used to personally identify you unless there is a technical issue.",
+      "Privacy Policy": "\nConfidentiality and Security: We prioritize the protection of your information and have implemented appropriate security measures to prevent unauthorized access, disclosure, or alteration. Only authorized personnel have access to this information, and they are bound by confidentiality obligations.\nAccess Restrictions and Exploration: Unauthorized access to our application, including attempting to explore its functioning by accessing the root of the API, is strictly prohibited. Any violation of this privacy policy or our terms of use may result in disciplinary action, including account termination and, if necessary, legal action.\nInformation Retention: We retain your information for as long as necessary to fulfill the purposes stated in this privacy policy, unless a longer retention period is required or permitted by law.\nChanges to the Privacy Policy: We reserve the right to modify this privacy policy at any time. Any changes will be effective upon publication on our website or within the application. It is your responsibility to regularly review this privacy policy for any updates.\nConsent: By using our application, you consent to the collection, use, and disclosure of your information in accordance with this privacy policy.\nLast Updated: 2023/11/30\n"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:08:58",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.024128,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:09:45",
+    "route": "/",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.0,
+    "response": {
+      "Notice": "The api is protected, you could not do anything.",
+      "A message for you ": "Hello dear dev./user WELCOME TO the Privacy Policy premier_league",
+      "Pay attention": "We collect certain information, including your IP address and MAC address, for troubleshooting purposes. This information is collected automatically and anonymously and is not used to personally identify you unless there is a technical issue.",
+      "Privacy Policy": "\nConfidentiality and Security: We prioritize the protection of your information and have implemented appropriate security measures to prevent unauthorized access, disclosure, or alteration. Only authorized personnel have access to this information, and they are bound by confidentiality obligations.\nAccess Restrictions and Exploration: Unauthorized access to our application, including attempting to explore its functioning by accessing the root of the API, is strictly prohibited. Any violation of this privacy policy or our terms of use may result in disciplinary action, including account termination and, if necessary, legal action.\nInformation Retention: We retain your information for as long as necessary to fulfill the purposes stated in this privacy policy, unless a longer retention period is required or permitted by law.\nChanges to the Privacy Policy: We reserve the right to modify this privacy policy at any time. Any changes will be effective upon publication on our website or within the application. It is your responsibility to regularly review this privacy policy for any updates.\nConsent: By using our application, you consent to the collection, use, and disclosure of your information in accordance with this privacy policy.\nLast Updated: 2023/11/30\n"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:10:02",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.065053,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:11:06",
+    "route": "/",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.0,
+    "response": {
+      "Notice": "The api is protected, you could not do anything.",
+      "A message for you ": "Hello dear dev./user WELCOME TO the Privacy Policy premier_league",
+      "Pay attention": "We collect certain information, including your IP address and MAC address, for troubleshooting purposes. This information is collected automatically and anonymously and is not used to personally identify you unless there is a technical issue.",
+      "Privacy Policy": "\nConfidentiality and Security: We prioritize the protection of your information and have implemented appropriate security measures to prevent unauthorized access, disclosure, or alteration. Only authorized personnel have access to this information, and they are bound by confidentiality obligations.\nAccess Restrictions and Exploration: Unauthorized access to our application, including attempting to explore its functioning by accessing the root of the API, is strictly prohibited. Any violation of this privacy policy or our terms of use may result in disciplinary action, including account termination and, if necessary, legal action.\nInformation Retention: We retain your information for as long as necessary to fulfill the purposes stated in this privacy policy, unless a longer retention period is required or permitted by law.\nChanges to the Privacy Policy: We reserve the right to modify this privacy policy at any time. Any changes will be effective upon publication on our website or within the application. It is your responsibility to regularly review this privacy policy for any updates.\nConsent: By using our application, you consent to the collection, use, and disclosure of your information in accordance with this privacy policy.\nLast Updated: 2023/11/30\n"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:11:18",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.039626,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:11:42",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.079143,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:12:43",
+    "route": "/",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.0,
+    "response": {
+      "Notice": "The api is protected, you could not do anything.",
+      "A message for you ": "Hello dear dev./user WELCOME TO the Privacy Policy premier_league",
+      "Pay attention": "We collect certain information, including your IP address and MAC address, for troubleshooting purposes. This information is collected automatically and anonymously and is not used to personally identify you unless there is a technical issue.",
+      "Privacy Policy": "\nConfidentiality and Security: We prioritize the protection of your information and have implemented appropriate security measures to prevent unauthorized access, disclosure, or alteration. Only authorized personnel have access to this information, and they are bound by confidentiality obligations.\nAccess Restrictions and Exploration: Unauthorized access to our application, including attempting to explore its functioning by accessing the root of the API, is strictly prohibited. Any violation of this privacy policy or our terms of use may result in disciplinary action, including account termination and, if necessary, legal action.\nInformation Retention: We retain your information for as long as necessary to fulfill the purposes stated in this privacy policy, unless a longer retention period is required or permitted by law.\nChanges to the Privacy Policy: We reserve the right to modify this privacy policy at any time. Any changes will be effective upon publication on our website or within the application. It is your responsibility to regularly review this privacy policy for any updates.\nConsent: By using our application, you consent to the collection, use, and disclosure of your information in accordance with this privacy policy.\nLast Updated: 2023/11/30\n"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:12:50",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.03859,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:13:17",
+    "route": "/",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.0,
+    "response": {
+      "Notice": "The api is protected, you could not do anything.",
+      "A message for you ": "Hello dear dev./user WELCOME TO the Privacy Policy premier_league",
+      "Pay attention": "We collect certain information, including your IP address and MAC address, for troubleshooting purposes. This information is collected automatically and anonymously and is not used to personally identify you unless there is a technical issue.",
+      "Privacy Policy": "\nConfidentiality and Security: We prioritize the protection of your information and have implemented appropriate security measures to prevent unauthorized access, disclosure, or alteration. Only authorized personnel have access to this information, and they are bound by confidentiality obligations.\nAccess Restrictions and Exploration: Unauthorized access to our application, including attempting to explore its functioning by accessing the root of the API, is strictly prohibited. Any violation of this privacy policy or our terms of use may result in disciplinary action, including account termination and, if necessary, legal action.\nInformation Retention: We retain your information for as long as necessary to fulfill the purposes stated in this privacy policy, unless a longer retention period is required or permitted by law.\nChanges to the Privacy Policy: We reserve the right to modify this privacy policy at any time. Any changes will be effective upon publication on our website or within the application. It is your responsibility to regularly review this privacy policy for any updates.\nConsent: By using our application, you consent to the collection, use, and disclosure of your information in accordance with this privacy policy.\nLast Updated: 2023/11/30\n"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:14:04",
+    "route": "/",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.0,
+    "response": {
+      "Notice": "The api is protected, you could not do anything.",
+      "A message for you ": "Hello dear dev./user WELCOME TO the Privacy Policy premier_league",
+      "Pay attention": "We collect certain information, including your IP address and MAC address, for troubleshooting purposes. This information is collected automatically and anonymously and is not used to personally identify you unless there is a technical issue.",
+      "Privacy Policy": "\nConfidentiality and Security: We prioritize the protection of your information and have implemented appropriate security measures to prevent unauthorized access, disclosure, or alteration. Only authorized personnel have access to this information, and they are bound by confidentiality obligations.\nAccess Restrictions and Exploration: Unauthorized access to our application, including attempting to explore its functioning by accessing the root of the API, is strictly prohibited. Any violation of this privacy policy or our terms of use may result in disciplinary action, including account termination and, if necessary, legal action.\nInformation Retention: We retain your information for as long as necessary to fulfill the purposes stated in this privacy policy, unless a longer retention period is required or permitted by law.\nChanges to the Privacy Policy: We reserve the right to modify this privacy policy at any time. Any changes will be effective upon publication on our website or within the application. It is your responsibility to regularly review this privacy policy for any updates.\nConsent: By using our application, you consent to the collection, use, and disclosure of your information in accordance with this privacy policy.\nLast Updated: 2023/11/30\n"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:14:09",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.043022,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:14:46",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.080177,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:14:53",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.039973,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:15:38",
+    "route": "/api/premierleague/postgresql/getButs",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.043745,
+    "response": {
+      "response": [
+        {
+          "but_id": 1,
+          "minute": 30,
+          "buteur": "vitaly",
+          "passeur": "vivi"
+        },
+        {
+          "but_id": 2,
+          "minute": 30,
+          "buteur": "popa",
+          "passeur": "sisi"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:19:12",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.055517,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:21:18",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.076799,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:21:25",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.028006,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:25:11",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.161531,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:26:39",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.04919,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:28:01",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.042586,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:28:25",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.062795,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:29:05",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.080519,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:29:31",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.092316,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:29:52",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.080302,
+    "response": {
+      "response": true
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:30:22",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.082703,
+    "response": {
+      "response": [
+        {
+          "equipe_id": 1,
+          "nom_de_equipe": "Arsenal",
+          "manager": "Arteta",
+          "joueurs": "Jesus, Saka"
+        },
+        {
+          "equipe_id": 2,
+          "nom_de_equipe": "ManCity",
+          "manager": "Pep",
+          "joueurs": "Holland, Rodri"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:34:24",
+    "route": "/",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.0,
+    "response": {
+      "Notice": "The api is protected, you could not do anything.",
+      "A message for you ": "Hello dear dev./user WELCOME TO the Privacy Policy premier_league",
+      "Pay attention": "We collect certain information, including your IP address and MAC address, for troubleshooting purposes. This information is collected automatically and anonymously and is not used to personally identify you unless there is a technical issue.",
+      "Privacy Policy": "\nConfidentiality and Security: We prioritize the protection of your information and have implemented appropriate security measures to prevent unauthorized access, disclosure, or alteration. Only authorized personnel have access to this information, and they are bound by confidentiality obligations.\nAccess Restrictions and Exploration: Unauthorized access to our application, including attempting to explore its functioning by accessing the root of the API, is strictly prohibited. Any violation of this privacy policy or our terms of use may result in disciplinary action, including account termination and, if necessary, legal action.\nInformation Retention: We retain your information for as long as necessary to fulfill the purposes stated in this privacy policy, unless a longer retention period is required or permitted by law.\nChanges to the Privacy Policy: We reserve the right to modify this privacy policy at any time. Any changes will be effective upon publication on our website or within the application. It is your responsibility to regularly review this privacy policy for any updates.\nConsent: By using our application, you consent to the collection, use, and disclosure of your information in accordance with this privacy policy.\nLast Updated: 2023/11/30\n"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:34:27",
+    "route": "/api/premierleague/postgresql/getJoueurs",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.056911,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:35:16",
+    "route": "/api/premierleague/postgresql/getJoueurs",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.073861,
+    "response": {
+      "response": "ERROR"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:36:03",
+    "route": "/",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.0,
+    "response": {
+      "Notice": "The api is protected, you could not do anything.",
+      "A message for you ": "Hello dear dev./user WELCOME TO the Privacy Policy premier_league",
+      "Pay attention": "We collect certain information, including your IP address and MAC address, for troubleshooting purposes. This information is collected automatically and anonymously and is not used to personally identify you unless there is a technical issue.",
+      "Privacy Policy": "\nConfidentiality and Security: We prioritize the protection of your information and have implemented appropriate security measures to prevent unauthorized access, disclosure, or alteration. Only authorized personnel have access to this information, and they are bound by confidentiality obligations.\nAccess Restrictions and Exploration: Unauthorized access to our application, including attempting to explore its functioning by accessing the root of the API, is strictly prohibited. Any violation of this privacy policy or our terms of use may result in disciplinary action, including account termination and, if necessary, legal action.\nInformation Retention: We retain your information for as long as necessary to fulfill the purposes stated in this privacy policy, unless a longer retention period is required or permitted by law.\nChanges to the Privacy Policy: We reserve the right to modify this privacy policy at any time. Any changes will be effective upon publication on our website or within the application. It is your responsibility to regularly review this privacy policy for any updates.\nConsent: By using our application, you consent to the collection, use, and disclosure of your information in accordance with this privacy policy.\nLast Updated: 2023/11/30\n"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:36:09",
+    "route": "/api/premierleague/postgresql/getJoueurs",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.061531,
+    "response": {
+      "response": [
+        {
+          "joueur_id ": null,
+          "nom_joueur": 1,
+          "premon_joueur": "Holland",
+          "position": "Erling",
+          "nombre_de_but": "Attaquant",
+          "nombre_de_pasees_d": null,
+          "distance_parcurue": 20
+        },
+        {
+          "joueur_id ": null,
+          "nom_joueur": 2,
+          "premon_joueur": "Messi",
+          "position": "Lionel",
+          "nombre_de_but": "Attaquant",
+          "nombre_de_pasees_d": null,
+          "distance_parcurue": 20
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:37:46",
+    "route": "/",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.0,
+    "response": {
+      "Notice": "The api is protected, you could not do anything.",
+      "A message for you ": "Hello dear dev./user WELCOME TO the Privacy Policy premier_league",
+      "Pay attention": "We collect certain information, including your IP address and MAC address, for troubleshooting purposes. This information is collected automatically and anonymously and is not used to personally identify you unless there is a technical issue.",
+      "Privacy Policy": "\nConfidentiality and Security: We prioritize the protection of your information and have implemented appropriate security measures to prevent unauthorized access, disclosure, or alteration. Only authorized personnel have access to this information, and they are bound by confidentiality obligations.\nAccess Restrictions and Exploration: Unauthorized access to our application, including attempting to explore its functioning by accessing the root of the API, is strictly prohibited. Any violation of this privacy policy or our terms of use may result in disciplinary action, including account termination and, if necessary, legal action.\nInformation Retention: We retain your information for as long as necessary to fulfill the purposes stated in this privacy policy, unless a longer retention period is required or permitted by law.\nChanges to the Privacy Policy: We reserve the right to modify this privacy policy at any time. Any changes will be effective upon publication on our website or within the application. It is your responsibility to regularly review this privacy policy for any updates.\nConsent: By using our application, you consent to the collection, use, and disclosure of your information in accordance with this privacy policy.\nLast Updated: 2023/11/30\n"
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:37:50",
+    "route": "/api/premierleague/postgresql/getJoueurs",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.058519,
+    "response": {
+      "response": [
+        {
+          "joueur_id ": 1,
+          "nom_joueur": "Holland",
+          "premon_joueur": "Erling",
+          "position": "Attaquant",
+          "nombre_de_but": 20,
+          "nombre_de_pasees_d": null,
+          "distance_parcurue": 10
+        },
+        {
+          "joueur_id ": 2,
+          "nom_joueur": "Messi",
+          "premon_joueur": "Lionel",
+          "position": "Attaquant",
+          "nombre_de_but": 20,
+          "nombre_de_pasees_d": null,
+          "distance_parcurue": 25
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:37:57",
+    "route": "/api/premierleague/postgresql/getEquipes",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.021146,
+    "response": {
+      "response": [
+        {
+          "equipe_id": 1,
+          "nom_de_equipe": "Arsenal",
+          "manager": "Arteta",
+          "joueurs": "Jesus, Saka"
+        },
+        {
+          "equipe_id": 2,
+          "nom_de_equipe": "ManCity",
+          "manager": "Pep",
+          "joueurs": "Holland, Rodri"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2023-12-21 15:38:29",
+    "route": "/api/premierleague/postgresql/getJoueurs",
+    "method": "GET",
+    "ip_address": "127.0.0.1",
+    "execution_time": 0.021365,
+    "response": {
+      "response": [
+        {
+          "joueur_id ": 1,
+          "nom_joueur": "Holland",
+          "premon_joueur": "Erling",
+          "position": "Attaquant",
+          "nombre_de_but": 20,
+          "nombre_de_pasees_d": null,
+          "distance_parcurue": 10
+        },
+        {
+          "joueur_id ": 2,
+          "nom_joueur": "Messi",
+          "premon_joueur": "Lionel",
+          "position": "Attaquant",
+          "nombre_de_but": 20,
+          "nombre_de_pasees_d": null,
+          "distance_parcurue": 25
+        }
+      ]
+    }
+  }
+]

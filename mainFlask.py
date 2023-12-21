@@ -127,7 +127,7 @@ def get_buts():
 @log_request_info
 def get_UnBut():
     """
-    Obtenir la liste des buts.
+    Obtenir un but.
     @return: Liste des buts au format JSON.
     """
     idB = request.json.get('idB')
@@ -160,17 +160,17 @@ def get_equipes():
     @return: Liste des equipes au format JSON.
     """
 
-    equipesC = EquipesC.Equipes.visualiserEq()
+    equipesC = EquipesC.Equipes.visualiserEquipes()
     liste_equipes = []
-
+    
     if type(equipesC)==list:
-        for bc in equipesC:
+        for eq in equipesC:
 
             equipe = {
-                "equipe_id" : bc.getEquipeId(),
-                "nom_de_equipe" : bc.getNomDeEquipe(),
-                "manager" : bc.getManager(),
-                "joueurs" : bc.getJoueurs()
+                "equipe_id" : eq.getEquipeId(),
+                "nom_de_equipe" : eq.getNomDeEquipe(),
+                "manager" : eq.getManager(),
+                "joueurs" : eq.getJoueurs()
             }
 
             liste_equipes.append(equipe)
@@ -179,9 +179,9 @@ def get_equipes():
 
     return {'response':equipesC}
 
-@app.route(f'/api/premierleague/postgresql/getEquipes',methods=['GET'])
+@app.route(f'/api/premierleague/postgresql/getUneEquipe',methods=['GET'])
 @log_request_info
-def get_UneEquipes():
+def get_UneEquipe():
     """
     Obtenir la liste des equipes.
     @return: Liste des equipes au format JSON.
@@ -216,21 +216,21 @@ def get_joueurs():
     @return: Liste des joueurs au format JSON.
     """
 
-    joueursC = JoueursC.Joueurs.visualiserJoueur()
+    joueursC = JoueursC.Joueurs.visualiserJoueurs()
 
     liste_joueurs= []
 
     if type(joueursC)==list:
-        for bc in joueursC:
+        for js in joueursC:
 
             joueur = {
-                "joueur_id " : bc.getJoueurId(),
-                "nom_joueur" : bc.getNom(),
-                "premon_joueur" : bc.getPrenom(),
-                "position" : bc.getPosition(),
-                "nombre_de_but" : bc.getNombreDeBut(),
-                "nombre_de_pasees_d" : bc.getNombreDePassesD(),
-                "distance_parcurue" : bc.getDistanceParcurue()
+                "joueur_id " : js.getJoueurId(),
+                "nom_joueur" : js.getNom(),
+                "premon_joueur" : js.getPrenom(),
+                "position" : js.getPosition(),
+                "nombre_de_but" : js.getNombreDeBut(),
+                "nombre_de_pasees_d" : js.getNombreDePassesD(),
+                "distance_parcurue" : js.getDistanceParcurue()
             }
 
             liste_joueurs.append(joueur)

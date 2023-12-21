@@ -62,11 +62,12 @@ class JoueursDAO(ModelDAO.modeleDAO):
 
                 for r in res:
                     j = Joueurs()
-                    j.setNom(r[0])
-                    j.setPrenom(r[1])
-                    j.setPosition(r[2])
-                    j.setNombreDeBut(r[3])
-                    j.setDistanceParcurue(r[4])
+                    j.setJoueurId(r[0])
+                    j.setNom(r[1])
+                    j.setPrenom(r[2])
+                    j.setPosition(r[3])
+                    j.setNombreDeBut(r[4])
+                    j.setDistanceParcurue(r[5])
 
                     liste_joueurs.append(j)
                 return liste_joueurs
@@ -78,7 +79,6 @@ class JoueursDAO(ModelDAO.modeleDAO):
             print(f"Erreur_JoueursDAO.trouverTout() ::: {e}")
         finally:
             self.cur.close()
-            return None
         
     def trouverToutParUn(self, cleTrouv) -> list[Joueurs]:
         try: 

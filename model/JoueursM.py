@@ -1,13 +1,13 @@
 class Joueurs:
 
-    def __init__(self, __joueur_id, __nom_joueur, __premon_joueur, __position, __nombre_de_but, __nombre_de_passes_d, __distance_parcurue):
-        self.__joueur_id = __joueur_id
-        self.__nom_joueur = __nom_joueur
-        self.__premon_joueur = __premon_joueur
-        self.__position = __position
-        self.__nombre_de_but = __nombre_de_but,
-        self.__nombre_de_passes_d = __nombre_de_passes_d
-        self.__distance_parcurue = __distance_parcurue
+    def __init__(self):
+        self.__joueur_id = None
+        self.__nom_joueur = None
+        self.__premon_joueur = None
+        self.__position = None
+        self.__nombre_de_but = None
+        self.__nombre_de_passes_d = None
+        self.__distance_parcurue = None
 
     def setJoueurId(self, joueur_id) -> None:
         self.__joueur_id = joueur_id

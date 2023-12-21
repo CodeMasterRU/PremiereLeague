@@ -1,10 +1,10 @@
 class Equipes:
 
-    def __init__(self, __equipe_id, __nom_de_equipe, __manager, __joueurs):
-        self.__equipe_id = __equipe_id,
-        self.__nom_de_equipe = __nom_de_equipe,
-        self.__manager = __manager,
-        self.__joueurs = __joueurs
+    def __init__(self):
+        self.__equipe_id = None,
+        self.__nom_de_equipe = None,
+        self.__manager = None,
+        self.__joueurs = None
 
     def setEquipeId(self, equipe_id) -> None:
         self.__equipe_id = equipe_id

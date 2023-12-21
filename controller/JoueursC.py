@@ -4,7 +4,7 @@ from model import JoueursM
 class Joueurs:
 
     @staticmethod
-    def visualiserJoueur():
+    def visualiserJoueurs():
 
         try:
 
