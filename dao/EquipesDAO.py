@@ -40,7 +40,7 @@ class EquipesDAO(ModelDAO.modeleDAO):
                 e.setEquipeId(res[0])
                 e.setNomDeEquipe(res[1])
                 e.setManager(res[2])
-                e.setJoueur(res[3])#это будет список
+                e.setJoueurs(res[3])#это будет список
                 return e
             else: 
                 return None

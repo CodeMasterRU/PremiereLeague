@@ -1,7 +1,7 @@
-from dao.ButsDAO import *
+from dao.ButsDAO import ButsDAO
 from model import ButsM
 
-class Buits:
+class Buts:
 
     @staticmethod
     def visualiserButs():
@@ -32,9 +32,8 @@ class Buits:
 
         try:
 
-            bDAO = ButsDAO()
-
-            b: ButsM.Buts = bDAO.trouverUn(idB)
+            print(idB)
+            b: ButsM.Buts = ButsDAO().trouverUn(idB)
 
             if b == None:
                 return "ERROR"

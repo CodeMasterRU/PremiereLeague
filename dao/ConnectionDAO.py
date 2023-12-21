@@ -14,20 +14,20 @@ class ConnexionBD:
 
             # get file and data
             with open("./config/Config.yaml", "r") as fic:
-                donnees = yaml.safe_load(fic)
-            config = donnees["postgreSQLAccess"]
-            db = config["db"]
+                config = yaml.safe_load(fic)
+            db = config["database_name"]
             host = config["host"]
             port = config["port"]
-            usr = config["user"]["usr1"]
-            pwd = config["pwd"]["pwd1"]
+            usr = config["user"]
+            pwd = config["pwd"]
 
-            self.cnx = psycopg2.connect(dbname=db,
+            self.cnx = psycopg2.connect(database=db,
                                   host=host,
                                   port=port,
                                   user=usr,
                                   password=pwd
                                   )
+            print('Connexion réussi')
             return self.cnx
         except Exception as e:
             print(f"Erreur-CONNECTION ::: {e}")

@@ -23,7 +23,7 @@ class Equipes:
         return None
 
     @staticmethod
-    def visualiserUnEq(idEQ):
+    def visualiserUneEq(idEQ):
 
         try:
 

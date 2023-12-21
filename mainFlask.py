@@ -100,8 +100,9 @@ def get_buts():
     Obtenir la liste des buts.
     @return: Liste des buts au format JSON.
     """
-
-    butsC = ButsC.Buits.visualiserUnBut()
+    # idB = request.json.get('idB')
+    # print(idB)
+    butsC = ButsC.Buts.visualiserButs()
 
     liste_buts = []
 
@@ -112,7 +113,7 @@ def get_buts():
                 "but_id" : bc.getButId(),
                 "minute" : bc.getMinute(),
                 "buteur" : bc.getButeur(),
-                "passaur" : bc.getPasseur()
+                "passeur" : bc.getPasseur()
             }
 
             liste_buts.append(but)
@@ -120,6 +121,37 @@ def get_buts():
         return {'response':liste_buts}
 
     return {'response':butsC}
+
+
+@app.route(f'/api/premierleague/postgresql/getUnBut',methods=['GET'])
+@log_request_info
+def get_UnBut():
+    """
+    Obtenir la liste des buts.
+    @return: Liste des buts au format JSON.
+    """
+    idB = request.json.get('idB')
+    print(idB)
+    butsC = ButsC.Buts.visualiserUnBut(idB)
+
+    liste_buts = []
+
+    if type(butsC)==list:
+        for bc in butsC:
+
+            but = {
+                "but_id" : bc.getButId(),
+                "minute" : bc.getMinute(),
+                "buteur" : bc.getButeur(),
+                "passeur" : bc.getPasseur()
+            }
+
+            liste_buts.append(but)
+
+        return {'response':liste_buts}
+
+    return {'response':butsC}
+
 @app.route(f'/api/premierleague/postgresql/getEquipes',methods=['GET'])
 @log_request_info
 def get_equipes():
@@ -128,7 +160,34 @@ def get_equipes():
     @return: Liste des equipes au format JSON.
     """
 
-    equipesC = EquipesC.Equipes.visualiserUnEq()
+    equipesC = EquipesC.Equipes.visualiserEq()
+    liste_equipes = []
+
+    if type(equipesC)==list:
+        for bc in equipesC:
+
+            equipe = {
+                "equipe_id" : bc.getEquipeId(),
+                "nom_de_equipe" : bc.getNomDeEquipe(),
+                "manager" : bc.getManager(),
+                "joueurs" : bc.getJoueurs()
+            }
+
+            liste_equipes.append(equipe)
+
+        return {'response':liste_equipes}
+
+    return {'response':equipesC}
+
+@app.route(f'/api/premierleague/postgresql/getEquipes',methods=['GET'])
+@log_request_info
+def get_UneEquipes():
+    """
+    Obtenir la liste des equipes.
+    @return: Liste des equipes au format JSON.
+    """
+    idEQ = request.json.get('idEQ')
+    equipesC = EquipesC.Equipes.visualiserUneEq(idEQ)
 
     liste_equipes = []
 
@@ -147,6 +206,8 @@ def get_equipes():
         return {'response':liste_equipes}
 
     return {'response':equipesC}
+
+
 @app.route(f'/api/premierleague/postgresql/getJoueurs',methods=['GET'])
 @log_request_info
 def get_joueurs():
@@ -155,6 +216,37 @@ def get_joueurs():
     @return: Liste des joueurs au format JSON.
     """
 
+    joueursC = JoueursC.Joueurs.visualiserJoueur()
+
+    liste_joueurs= []
+
+    if type(joueursC)==list:
+        for bc in joueursC:
+
+            joueur = {
+                "joueur_id " : bc.getJoueurId(),
+                "nom_joueur" : bc.getNom(),
+                "premon_joueur" : bc.getPrenom(),
+                "position" : bc.getPosition(),
+                "nombre_de_but" : bc.getNombreDeBut(),
+                "nombre_de_pasees_d" : bc.getNombreDePassesD(),
+                "distance_parcurue" : bc.getDistanceParcurue()
+            }
+
+            liste_joueurs.append(joueur)
+
+        return {'response':liste_joueurs}
+
+    return {'response':joueursC}
+
+@app.route(f'/api/premierleague/postgresql/getUnJoueur',methods=['GET'])
+@log_request_info
+def get_UnJoueur():
+    """
+    Obtenir la liste des Joueurs.
+    @return: Liste des joueurs au format JSON.
+    """
+    idJ = request.json.get("idJ")
     joueursC = JoueursC.Joueurs.visualiserUnJ()
 
     liste_joueurs= []
@@ -177,6 +269,7 @@ def get_joueurs():
         return {'response':liste_joueurs}
 
     return {'response':joueursC}
+
 @app.route(f'/api/premierleague/postgresql/getManagers',methods=['GET'])
 @log_request_info
 def get_managers():

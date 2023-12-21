@@ -1,10 +1,10 @@
 class Buts:
 
-    def __init__(self, __but_id, __minute, __buteur, __passeur):
-        self.__but_id = __but_id,
-        self.__minute = __minute,
-        self.__buteur = __buteur,
-        self.__passeur = __passeur
+    def __init__(self):
+        self.__but_id = None,
+        self.__minute = None,
+        self.__buteur = None,
+        self.__passeur = None
     
     def setButId(self, but_id) -> None:
         self.__but_id = but_id

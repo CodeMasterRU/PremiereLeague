@@ -78,6 +78,7 @@ class ButsDAO(ModelDAO.modeleDAO):
             res = self.cur.fetchall()
 
             liste_buts = []
+            print(res)
 
             if len(res) > 0:
 
