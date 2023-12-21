@@ -16,7 +16,7 @@ class ConnexionBD:
             with open("./config/Config.yaml", "r") as fic:
                 donnees = yaml.safe_load(fic)
             config = donnees["postgreSQLAccess"]
-            db = config["database_name"]
+            db = config["db"]
             host = config["host"]
             port = config["port"]
             usr = config["user"]["usr1"]

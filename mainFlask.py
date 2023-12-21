@@ -12,7 +12,7 @@ sys.path.append(controller_path)
 
 
 
-from controller import ButsC, EquipesC, JoueursC, ManagersC, MatchsC, SeasonsC
+from controller import ButsC, EquipesC, JoueursC, ManagersC, MatchsC, SeasonsC, sysadminC
 from model import ButsM, EquipesM, MatchsM, JoueursM, ManagersM, SeasonsM
 app = Flask(__name__)
 
@@ -110,7 +110,9 @@ def get_buts():
 
             but = {
                 "but_id" : bc.getButId(),
-                "minute" : bc.getMinute()
+                "minute" : bc.getMinute(),
+                "buteur" : bc.getButeur(),
+                "passaur" : bc.getPasseur()
             }
 
             liste_buts.append(but)
@@ -118,7 +120,7 @@ def get_buts():
         return {'response':liste_buts}
 
     return {'response':butsC}
-@app.route(f'/api/premierleague/postgresql/getButs',methods=['GET'])
+@app.route(f'/api/premierleague/postgresql/getEquipes',methods=['GET'])
 @log_request_info
 def get_equipes():
     """
@@ -135,7 +137,9 @@ def get_equipes():
 
             equipe = {
                 "equipe_id" : bc.getEquipeId(),
-                "nom_de_equipe" : bc.getNomDeEquipe()
+                "nom_de_equipe" : bc.getNomDeEquipe(),
+                "manager" : bc.getManager(),
+                "joueurs" : bc.getJoueurs()
             }
 
             liste_equipes.append(equipe)
@@ -160,7 +164,12 @@ def get_joueurs():
 
             joueur = {
                 "joueur_id " : bc.getJoueurId(),
-                "nom_joueur" : bc.getNom()
+                "nom_joueur" : bc.getNom(),
+                "premon_joueur" : bc.getPremon(),
+                "position" : bc.getPosition(),
+                "nombre_de_but" : bc.getNombreDeBut(),
+                "nombre_de_pasees_d" : bc.getNombreDePassesD(),
+                "distance_parcurue" : bc.getDistanceParcurue()
             }
 
             liste_joueurs.append(joueur)
@@ -185,7 +194,10 @@ def get_managers():
 
             manager = {
                 "manager_id" : bc.getManagerId(),
-                "nom_manager" : bc.getNomManager()
+                "nom_manager" : bc.getNomManager(),
+                "prenom_manager" : bc.getPrenomManager(),
+                "equipe" : bc.getEquipe(),
+                
             }
 
             liste_manager.append(manager)
@@ -211,7 +223,9 @@ def get_matchs():
 
             match = {
                 "match_id" : bc.getMatchId(),
-                "date" : bc.getDate()
+                "date" : bc.getDate(),
+                "stade" : bc.getStade(),
+                "resultat" : bc.getResultat()
             }
 
             liste_match.append(match)
@@ -220,7 +234,7 @@ def get_matchs():
 
     return {'response':matchC}
 
-app.route(f'/api/premierleague/postgresql/getMatch',methods=['GET'])
+app.route(f'/api/premierleague/postgresql/getSeason',methods=['GET'])
 @log_request_info
 def get_seasons():
     """
@@ -245,6 +259,118 @@ def get_seasons():
         return {'response':liste_season}
 
     return {'response':seasonsC}
+
+@app.route(f'/api/premierleague/postgresql/searchPleinText/<keyword>',methods=['GET'])
+@log_request_info
+def search_joueur(keyword):
+    """
+    Rechercher des produits par texte intégral.
+    @param keyword: Mot-clé pour la recherche.
+    @return: Liste des produits correspondants au format JSON.
+    """
+    resultats: str | list[JoueursM.Joueurs] | None = JoueursC.Joueurs.search_Joueurs_by_name(keyword)
+
+    if type(resultats)==list:
+
+        liste_joueur = []
+
+        for res in resultats:
+            Jo = {
+                "joueur_id " : res.getJoueurId(),
+                "nom_joueur" : res.getNom(),
+                "premon_joueur" : res.getPremon(),
+                "position" : res.getPosition(),
+                "nombre_de_but" : res.getNombreDeBut(),
+                "nombre_de_pasees_d" : res.getNombreDePassesD(),
+                "distance_parcurue" : res.getDistanceParcurue()
+            }
+
+            liste_joueur.append(Jo)
+
+        return {'response':liste_joueur}
+
+
+    return {'response':resultats}
+def search_Equipe(keyword):
+    """
+    Rechercher des produits par texte intégral.
+    @param keyword: Mot-clé pour la recherche.
+    @return: Liste des produits correspondants au format JSON.
+    """
+    resultats: str | list[EquipesM.Equipes] | None = EquipesC.Equipes.search_Equipes_by_name(keyword)
+
+    if type(resultats)==list:
+
+        liste_joueur = []
+
+        for res in resultats:
+            Eq = {
+                "equipe_id" : res.getEquipeId(),
+                "nom_de_equipe" : res.getNomDeEquipe(),
+                "manager" : res.getManager(),
+                "joueurs" : res.getJoueurs()
+            }
+
+            liste_joueur.append(Eq)
+
+        return {'response':liste_joueur}
+
+
+    return {'response':resultats}
+
+def search_Manager(keyword):
+    """
+    Rechercher des produits par texte intégral.
+    @param keyword: Mot-clé pour la recherche.
+    @return: Liste des produits correspondants au format JSON.
+    """
+    resultats: str | list[ManagersM.Managers] | None = ManagersC.Managers.search_Managers_by_name(keyword)
+
+    if type(resultats)==list:
+
+        liste_manager = []
+
+        for res in resultats:
+            Mo = {
+                 "manager_id" : res.getManagerId(),
+                "nom_manager" : res.getNomManager(),
+                "prenom_manager" : res.getPrenomManager(),
+                "equipe" : res.getEquipe(),
+            }
+
+            liste_manager.append(Mo)
+
+        return {'response':liste_manager}
+
+
+    return {'response':resultats}
+def search_Match(keyword):
+    """
+    Rechercher des produits par texte intégral.
+    @param keyword: Mot-clé pour la recherche.
+    @return: Liste des produits correspondants au format JSON.
+    """
+    resultats: str | list[MatchsM.Matchs] | None = MatchsC.Matchs.search_Match_by_date(keyword)
+
+    if type(resultats)==list:
+
+        liste_match = []
+
+        for res in resultats:
+            Mt = {
+                "match_id" : res.getMatchId(),
+                "date" : res.getDate(),
+                "stade" : res.getStade(),
+                "resultat" : res.getResultat()
+            }
+
+            liste_match.append(Mt)
+
+        return {'response':liste_match}
+
+
+    return {'response':resultats}
+
 @app.route('/api/premierleague/postgresql/create_user', methods=['POST'])
 @log_request_info
 def create_user():

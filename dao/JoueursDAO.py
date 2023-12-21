@@ -159,12 +159,36 @@ class JoueursDAO(ModelDAO.modeleDAO):
         finally:
             self.cur.close()
 
-    def searchPleinText(self) -> list:
+    def searchPleinText(self, keyword) -> list[Joueurs]:
         '''
         Effectue une recherche plein texte.
 
+        :param keyword: Le mot-clé de recherche.
         :return: Une liste de résultats de recherche.
         '''
-        pass
+        try:
+            query = '''SELECT * FROM joueurs WHERE nom_joueur @@ %s;'''
+            self.cur.execute(query, (f"'{keyword}'",))
+            res = self.cur.fetchall()
+
+            liste_joueurs = []
+
+            if len(res) > 0:
+                for r in res:
+                    joueur = Joueurs()
+                    joueur.setJoueurID(r[0])
+                    joueur.setNom(r[1])
+                    liste_joueurs.append(joueur)
+
+                return liste_joueurs
+
+            else:
+                return None
+
+        except Exception as e:
+            print(f"Erreur_JoueursDAO.searchPleinText() ::: {e}")
+        finally:
+            self.cur.close()
+        
 
         
